@@ -7,41 +7,7 @@
     
     <meta name="description" content="Example project WC8">
     <link rel="stylesheet" href="/styles/style.css">
-    <script type="text/javascript">
     
-      // changes background color over time
-      function disco() {
-        var background = backgroundColor();
-        
-        // make background red
-        document.body.className = background;
-      }
-      
-      // choose backgroundcolor
-      function backgroundColor() {
-        var color = ['red','green','yellow','black','pink'];
-
-      }
-      
-      window.onload = function() {
-        
-        document.getElementById('add').onclick = function (e) {
-          
-          e.preventDefault();
-            
-          var ul = document.getElementById("todos");
-          var li = document.createElement("li");
-          var inputValue = document.getElementById('todo').value;
-          
-          li.appendChild(document.createTextNode(inputValue));
-          ul.appendChild(li);
-          
-        };
-        
-      };
-      
-    </script>
-
   </head>
   <body>
     
@@ -56,42 +22,16 @@
       </header>
   
       <main>
-<!--         <section class="backgrounds">
-  <h3>Choose background color:</h3>
-  
-  <button id="black">Black</button>
-  <button id="green">Green</button>
-  <button id="yellow">Yellow</button>
-  <button id="red">Red</button>
-  <button id="disco">Disco</button>
-  <button id="reset">Reset</button>
-</section>
-       <section class="math">
-<hr>
- <h3>Calculator</h3>
- <form method="post" action=""> 
-   <input type="text" name="number-1" id="number-1" value="0">
-   <span id="sign">+</span>
-   <input type="text" name="number-2" id="number-2" value="0">
-   =
-   <span id="result">0</span>
-   <button id="calculate">Calculate</button>
- </form>
-       </section> -->
+         <section class="backgrounds">
+          <h3>Choose background color:</h3>
+          
+          <button id="black">Black</button>
+          <button id="green">Green</button>
+          <button id="yellow">Yellow</button>
+          <button id="red">Red</button>
+          <button id="disco">Disco</button>
+        </section>
        
-      <section class="math">
-        <hr>
-         <h3>Todo list</h3>
-         <form method="post" action=""> 
-           <input type="text" name="todo" id="todo">
-           <button id="add">Add TODO item</button>
-         </form>
-         <ul id="todos">
-           <li>Kamer opruimen</li>
-           <li>Eten koken</li>
-           <li>JavaScript leren</li>
-         </ul>
-       </section>
       </main>
   
       <footer>
