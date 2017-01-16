@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+  background-color: #f2f2f2;
+}
+
+body.black {
+  background-color: black;
+  color: white !important;
+}
+body.white {
+  background-color: #f2f2f2;
+}
+body.yellow {
+  background-color: yellow;
+}
+body.red {
+  background-color: red;
+}
+body.green {
+  background-color: green;
+}
+body.pink {
+  background-color: pink;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 50px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.4;
+  
+}
+
+section.math {
+  margin: 20px 0;
+}
+
+input[type='text'] {
+  padding: 5px;
+  font-size: 14px;
+  width: 40px;
+}
+
+#todo {
+  width: 200px;
+}
+
+a {
+  color: #777;
+}
+
+h1,h2 {
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  color: #777;
+  font-style: italic;
+}
+
+button {
+  display: block;
+  padding: 4px;
+  margin: 10px 0;
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 22px;
+}
+
+ul li {
+  font-size: 20px;
+  padding: 5px 0;
+  margin: 5px 0;
+  border-bottom: 1px solid #f3f3f3;
+  list-style-type: square; 
+}
+
+footer {
+  text-align: right;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Example project WC8">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script type="text/javascript">
+      
+      window.onload = function() {
+        
+        document.getElementById('add').onclick = function (e) {
+          
+          e.preventDefault();
+            
+          var ul = document.getElementById("todos");
+          var li = document.createElement("li");
+          var inputValue = document.getElementById('todo').value;
+          
+          li.appendChild(document.createTextNode(inputValue));
+          ul.appendChild(li);
+          
+        };
+        
+      };
+      
+    </script>
+
+  </head>
+  <body>
+    
+    <div class="container">
+      <header>
+        <h1>
+          Examples
+        </h1>
+        <h2>
+           Lets see what we can do!
+        </h2>
+      </header>
+  
+      <main>
+        
+      <section class="math">
+        <hr>
+         <h3>Todo list</h3>
+         <form method="post" action=""> 
+           <input type="text" name="todo" id="todo">
+           <button id="add">Add TODO item</button>
+         </form>
+         <ul id="todos">
+           <li>Kamer opruimen</li>
+           <li>Eten koken</li>
+           <li>JavaScript leren</li>
+         </ul>
+       </section>
+      </main>
+  
+      <footer>
+        <a href="https://github.com/mondayrunner/170116-web-technologies">
+          Visit repository 
+        </a>
+      </footer>
+  </div>
+  
+  </body>
+</html>
