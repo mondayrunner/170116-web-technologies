@@ -8,6 +8,51 @@
     <meta name="description" content="Example project WC8">
     <link rel="stylesheet" href="/styles/style.css">
     
+    <script type="text/javascript">
+    
+      function discoPolo() {
+    
+        // change classname
+        var colors = ['black','green','yellow','red','blue','pink'];
+        var arrayIndex = Math.floor((Math.random() * colors.length));
+        
+        document.body.className = colors[arrayIndex];
+        
+      }
+    
+      // listen to loading the page
+      window.onload = function() {
+        
+        var buttons = document.getElementsByTagName('button');
+        
+        for (var i = 0;i < buttons.length; i++) {
+          
+          buttons[i].onclick = function() {
+            
+            if (this.id == 'disco') {
+              
+              setInterval(function(){ discoPolo() }, 5);
+              
+              var audio = new Audio('https://cdn.gomix.com/ab1dba01-40d5-4084-9627-0100e9fce3f5%2FKatheyonda%20Helide%20-%20Kirik%20Party-Full%20Song-SongspkMagic.Com.mp3');
+              audio.play();
+              
+            }
+            else {
+              document.body.className = this.id;
+            }
+            
+          };
+          
+        }
+        
+        // listen to onclick on buttons
+        // document.getElementById('black').onclick = function() {
+        //  alert('black');
+        // };
+      };
+      
+    </script>
+    
   </head>
   <body>
     
@@ -25,8 +70,8 @@
          <section class="backgrounds">
           <h3>Choose background color:</h3>
           
-          <button id="black">Black</button>
-          <button id="green">Green</button>
+          <button id="black">sfgdfsdfsdf</button>
+          <button id="green">sdfsdfsdfsdf</button>
           <button id="yellow">Yellow</button>
           <button id="red">Red</button>
           <button id="disco">Disco</button>

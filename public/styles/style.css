@@ -26,6 +26,9 @@ body.green {
 body.pink {
   background-color: pink;
 }
+body.blue {
+  background-color: blue;
+}
 
 .container {
   max-width: 600px;
